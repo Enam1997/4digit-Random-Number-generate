@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int getFourDigitRandomNumber(){
+
+    int n = srand();
+    n = n%10000;
+    if(n<=999){
+        n+=999;
+    }
+    return n;
+}
+
+int main()
+{
+
+    int n = getFourDigitRandomNumber();
+
+    printf("%d\n", n);
+
+
+
+}
